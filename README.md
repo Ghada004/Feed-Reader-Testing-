@@ -15,18 +15,40 @@ I learned how to use Jasmine to write a number of tests against a pre-existing a
 
 
 
+
+#### Take the JavaScript Testing [course](https://www.udacity.com/course/ud549)
+#### Download the [required project assets](http://github.com/udacity/frontend-nanodegree-feedreader)
+
+**if you want to check the Test file:
+Explore the Jasmine spec file in ./jasmine/spec/feedreader.js and for more review the [Jasmine documentation]
+(http://jasmine.github.io).**
+
+
 ### Tests list:
 
-1- tests to make sure that the allFeeds variable has been defined and that it is not empty.
+1- Test that loops through each feed in the `allFeeds` object and ensures it has a URL defined and that the URL is not empty.
 
-2- loops through each feed and determines if the URL is defined and not empty.
+2- Test that loops through each feed in the `allFeeds` object and ensures it has a name defined and that the name is not empty.
 
-3- loops through each feed and determines that each feed has a name and not empty.
+3-  New test suite named `"The menu"`.
 
-4- ensures the menu element is hidden by default.
+4- Test that ensures the menu element is hidden by default.
+by analyzing the HTML and the CSS to determine how was performing the hiding/showing of the menu element.
 
-5- ensures the menu changes visibility when the menu icon is clicked, does the menu display when clicked and does it hide when clicked again..
 
-6- tests that there is at least one entry in feed.
+5- Twst to ensures the menu changes visibility when the menu icon is clicked, does the menu display when clicked and does it hide when clicked again.
 
-7- tests that new content is loaded by loadFeed().
+6- Test suite named `"Initial Entries"`.
+
+7- Test that ensures when the `loadFeed` function is called and completes its work, there is at least a single `.entry` element within the `.feed` container.
+
+8- Test suite named `"New Feed Selection"`.
+
+9- Test that ensures when a new feed is loaded by the `loadFeed` function that the content actually changes.
+
+10- There is No test dependent on the results of another. 'You ca try it' 
+
+11- Callbacks are used to ensure that feeds are loaded before they are tested.
+
+
+**Give it a look and have fun Testing.
