@@ -46,9 +46,9 @@ by analyzing the HTML and the CSS to determine how was performing the hiding/sho
 
 9- Test that ensures when a new feed is loaded by the `loadFeed` function that the content actually changes.
 
-10- There is No test dependent on the results of another. 'You ca try it' 
+10- There is No test dependent on the results of another. 'You can try it' 
 
 11- Callbacks are used to ensure that feeds are loaded before they are tested.
 
 
-**Give it a look and have fun Testing.
+### Give it a look and have fun Testing.
