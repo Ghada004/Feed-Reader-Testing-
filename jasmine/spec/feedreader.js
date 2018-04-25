@@ -46,7 +46,7 @@ $(function() {
          it('name is not empty', function() {
               allFeeds.forEach(function(feed) {
               expect(feed.name).toBeDefined();
-             expect(feed.name.length).not.toBe(null);
+             expect(feed.name.length).not.toBe(0);
               });
             });
           });
@@ -96,8 +96,8 @@ $(function() {
           });
       });
 
-      it('there is at least a one .entry in feed container', function() {
-        expect($('.entry').length).toBeGreaterThan(0);
+      it('there is at least a one entry ', function() {
+        expect($('.feed .entry').length).toBeGreaterThan(0);
       });
     });
 
