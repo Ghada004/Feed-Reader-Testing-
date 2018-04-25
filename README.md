@@ -23,6 +23,18 @@ I learned how to use Jasmine to write a number of tests against a pre-existing a
 Explore the Jasmine spec file in ./jasmine/spec/feedreader.js and for more review the [Jasmine documentation]
 (http://jasmine.github.io).**
 
+### How to run application:
+
+To start the app, open index.html in your browser.
+
+The tests were written in the feedreader.js file.
+
+The test results appears at the bottom of the index.html page.
+
+Tests that are green have passed and red have failed.
+
+
+
 
 ### Tests list:
 
