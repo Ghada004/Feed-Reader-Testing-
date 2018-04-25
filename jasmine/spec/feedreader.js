@@ -102,27 +102,25 @@ $(function() {
     });
 
     /*  new test suite named "New Feed Selection" */
-    discribe('New Feed Selection', function() {
-
-      var $feedA;
-       var $feedB;
-
-        /*  ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         *  loadFeed() is asynchronous.
-         */
-         //
-         beforeEach(function(done) {
-          loadFeed(0, function() {
-              done();
-          });
-      });
-
-      it('should change feed content after loading feed', function(done) {
-         loadFeed(1, function() {
-             feedB = $('.feed').html();
-             expect(feedB).not.toEqual(feedA);
-             done();
+    describe('New Feed Selection', function() {
+        // Store two the variable values for two feeds after loading
+        var feed0,
+            feed1;
+        
+        beforeEach(function (done) {
+            
+            loadFeed(1, function() {
+              
+                feed0 = $('.feed').html();
+                // console.log($('.feed').html());
+                done();
+            });
+        });
+        //  test to ensure when a new feed is loaded by the loadFeed function
+        it('ensures new feed is loaded by loadFeed function', function(done) {
+            loadFeed(0, function() {
+                expect($('.feed').html()).not.toEqual(feed0);
+                done();
            });
       });
   });
